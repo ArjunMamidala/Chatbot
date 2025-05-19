@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f1f4f9, #dff1ff);
+    margin: 0;
+    padding-top: 60px; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c3e50;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #34495e;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#chatContainer {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+#textbox {
+    flex: 1;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#sendBtn {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#sendBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Style for user messages */
+.user-message {
+    text-align: right;
+    margin: 10px;
+    background-color: #e6f7ff;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-left: auto;
+}
+
+.user-message span {
+    display: inline-block;
+    background-color: #d1eaff;
+    padding: 10px 14px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Style for chatbot messages */
+.bot-message {
+    text-align: left;
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-right: auto;
+}
+
+.bot-message span {
+    display: inline-block;
+    background-color: #e8e8e8;
+    padding: 10px 14px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word; 
+}
+
+/* Style for loading placeholder */
+.bot-message.loading {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Style for error messages */
+.error-message {
+    text-align: left;
+    margin: 10px;
+    background-color: #ffdddd;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 70%;
+    color: #a94442;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding-top: 60px;
+}
+
