@@ -12,6 +12,8 @@ var app = express();
 //Serving static files like CSS, JS, images from the public folder
 app.use(express.static("public"));
 
+app.set('view engine', 'ejs');
+
 
 
 app.get('/', (req, res) => {
