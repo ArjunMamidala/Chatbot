@@ -9,6 +9,12 @@ var ejs = require('ejs');
 //creating an express app instance and store it in the variable 'app
 var app = express();
 
+app.use(express.json());
+
+
+// const path = require('path');
+// app.set('views', path.join(__dirname, 'views/pages'));
+
 //Serving static files like CSS, JS, images from the public folder
 app.use(express.static("public"));
 
